@@ -241,14 +241,14 @@ ul.f li{margin:7px 0}
     <section id="sectionTab2" class="tabpanel" role="tabpanel" aria-labelledby="btnTab2" hidden>
       <div class="grid g4">
         <div class="kpi rose"><div class="t">양광면 평균 명도 (L*)</div><div class="v">59.17</div><div class="d">범위: 54.75 ~ 63.55</div></div>
-        <div class="kpi rose"><div class="t">양광면 평균 적색도 (a*)</div><div class="v">7.64</div><div class="d">최대: 11.95 (후지 3)</div></div>
-        <div class="kpi emer"><div class="t">음광면 평균 명도 (L*)</div><div class="v">70.45</div><div class="d">양광면 대비 +11.28</div></div>
+        <div class="kpi rose"><div class="t">양광면 평균 적색도 (a*)</div><div class="v">7.64</div><div class="d">최대: 11.95 (시나노골드 3)</div></div>
+        <div class="kpi emer"><div class="t">음광면 평균 명도 (L*)</div><div class="v">70.50</div><div class="d">양광면 대비 +11.33</div></div>
         <div class="kpi emer"><div class="t">음광면 평균 녹색도 (a*)</div><div class="v">-7.58</div><div class="d">지색 잔류(녹색) 양호</div></div>
       </div>
 
       <div class="card">
         <div class="card-head">
-          <h3>후지 개체별 실측 색도값 및 sRGB 색상 칩</h3>
+          <h3>시나노골드 개체별 실측 색도값 및 sRGB 색상 칩</h3>
           <span class="sub">CIELAB D65 근사 렌더링</span>
         </div>
         <div class="tw">
@@ -692,11 +692,11 @@ ul.f li{margin:7px 0}
      ========================================================= */
   const Tab2 = (function () {
     const colorData = [
-      { name: "후지 1", sun: { L: 63.55, a: 6.51, b: 27.69 }, shade: { L: 70.86, a: -8.15, b: 36.49 } },
-      { name: "후지 2", sun: { L: 59.75, a: 7.29, b: 26.91 }, shade: { L: 70.00, a: -7.89, b: 38.81 } },
-      { name: "후지 3", sun: { L: 54.75, a: 11.95, b: 22.92 }, shade: { L: 71.28, a: -8.71, b: 36.72 } },
-      { name: "후지 4", sun: { L: 58.12, a: 8.73, b: 21.28 }, shade: { L: 69.29, a: -5.71, b: 35.74 } },
-      { name: "후지 5", sun: { L: 59.67, a: 3.72, b: 27.79 }, shade: { L: 71.08, a: -7.46, b: 36.63 } }
+      { name: "시나노골드 1", sun: { L: 63.55, a: 6.51, b: 27.69 }, shade: { L: 70.86, a: -8.15, b: 36.49 } },
+      { name: "시나노골드 2", sun: { L: 59.75, a: 7.29, b: 26.91 }, shade: { L: 70.00, a: -7.89, b: 38.81 } },
+      { name: "시나노골드 3", sun: { L: 54.75, a: 11.95, b: 22.92 }, shade: { L: 71.28, a: -8.71, b: 36.72 } },
+      { name: "시나노골드 4", sun: { L: 58.12, a: 8.73, b: 21.28 }, shade: { L: 69.29, a: -5.71, b: 35.74 } },
+      { name: "시나노골드 5", sun: { L: 59.67, a: 3.72, b: 27.79 }, shade: { L: 71.08, a: -7.46, b: 36.63 } }
     ];
     const btns = [['a', 'a* (적/녹)'], ['L', 'L* (명도)'], ['b', 'b* (황색)']];
     let bar = null, scatter = null, metric = 'a', built = false;
@@ -872,7 +872,7 @@ ul.f li{margin:7px 0}
      ========================================================= */
   const META = {
     1: { t: "1. 과실 생육 및 품질 특성조사", s: "과실 생육 및 품질 데이터" },
-    2: { t: "2. 과실 표면 부위별 착색 및 색도(CIELAB) 분석", s: "후지 사과 색차계 측정 데이터" },
+    2: { t: "2. 과실 표면 부위별 착색 및 색도(CIELAB) 분석", s: "시나노골드 사과 색차계 측정 데이터" },
     3: { t: "3. 사과 품질 판별 6종 머신러닝 알고리즘 비교 대시보드", s: "Logistic Regression, KNN, SVM, Tree, RF, GBM 종합 비교" },
     4: { t: "4. YOLO11n 사과 검출 · 3개 모델 심층 분석", s: "e50 · e100 · e150 학습 곡선, 성능, 시험 사진 비교" }
   };
